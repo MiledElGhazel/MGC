@@ -1,0 +1,108 @@
+
+/*About*/
+
+
+/*Paragraph*/
+
+.hidden:nth-child(1){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateX(-100%);
+}
+
+.show:nth-child(1){
+    opacity: 1;
+   
+    transform: translateX(0);
+}
+
+/*End*/
+
+/*Images*/
+
+
+.hidden:nth-child(2){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateX(-100%);
+}
+
+.show:nth-child(2){
+    opacity: 1;
+   
+    transform: translateX(0);
+}
+
+/*End*/
+
+
+/*End*/
+
+
+/*Activities*/
+
+
+/* Title*/
+
+.hidden:nth-child(3){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateY(100%);
+    overflow-x: hidden;
+}
+
+.show:nth-child(3){
+    opacity: 1;
+   
+    transform: translateY(0);
+}
+
+/*End*/
+
+/*Each Activity*/
+
+.hidden:nth-child(4){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateX(100%);
+}
+
+.show:nth-child(4){
+    opacity: 1;
+   
+    transform: translateX(0);
+}
+
+.hidden:nth-child(5){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateX(-100%);
+}
+
+.show:nth-child(5){
+    opacity: 1;
+   
+    transform: translateX(0);
+}
+
+.hidden:nth-child(6){
+    opacity: 0;
+    transition: all 1s;
+    
+    transform: translateX(100%);
+}
+
+.show:nth-child(6){
+    opacity: 1;
+   
+    transform: translateX(0);
+}
+
+
+/*End*/
+

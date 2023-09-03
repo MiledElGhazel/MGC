@@ -1,0 +1,120 @@
+
+.activities-mobile{
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+
+.wrapper{
+    max-width: 1000px;
+    width: 80%;
+    position: relative;
+}
+
+.wrapper i{
+    height: 50px;
+    width: 90px;
+    background-color:#1a489d;
+    color:#a6ce3a;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 120%;
+    transform: translateY(-120%);
+    box-shadow: 0 3px 6px black;
+    font-size: 20px;
+}
+
+.wrapper i:first-child{
+    left: 0;
+ }
+
+.wrapper i:last-child{
+    right: 1px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 10px);
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card{
+    scroll-snap-align: start;
+    list-style: none;
+    background-color: #a6ce3a;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.texts{
+    background-color: #1a489d;
+    text-align: center;
+}
+
+.card .img img{
+    width: 260px;
+    height:160px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.card h2{
+    
+    color: floralwhite;
+    font-family: font1;
+    font-size: 25px;
+   
+}
+
+.card p{
+   all:unset;
+   font-family: font1;
+   color: floralwhite;
+   font-size:15px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel{
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel{
+        grid-auto-columns: 100%;
+    }
+}
+
+
